@@ -1,0 +1,316 @@
+@media (max-width:1440px) {
+    header .top, header .bottom, .heroSection, .price, .me, .whyMe, footer, nav, #main3, #main2 , #main4, .info {
+        padding: 0 14rem;
+    }
+    header .top, header .bottom, footer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+@media (max-width:1024px) {
+    html {
+        font-size: 14px;
+    }
+    header .top, header .bottom, .heroSection, .price, .me, .whyMe, footer, nav, #main3, #main2 , #main4, .info {
+        padding: 0 8rem;
+    }
+    header .top, header .bottom, footer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+
+}
+@media (max-width:768px) {
+    header .top, header .bottom, .heroSection, .price, .me, .whyMe, footer, nav, #main3, #main2 , #main4, .info {
+        padding: 0 4rem;
+    }
+    header .top, header .bottom, footer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    header {
+        & .top {
+            & span {
+                & h1 {
+                    font-size: 1.5rem;
+                }
+                & svg {
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+            & a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    nav {
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        & a {
+            font-size: 1.25rem;
+        }
+    }
+    .me {
+        & span {
+            align-items: flex-start;
+        }
+    }
+    .popupForm {
+        & form {
+            width: 100%;
+        }
+    }
+    #main3 {
+        & .list2 {
+            & .item2 {
+                width: 49%;
+            }
+        }
+    }
+    
+    
+    
+}
+@media (max-width:425px) {
+    html {
+        font-size: 12px;
+    }
+    header {
+        & .top {
+            flex-direction: column;
+        }
+    }
+    .heroSection {
+        & span:first-child {
+            height: 35rem;
+        }
+    }
+    .heroSection {
+        & span:nth-child(2) {
+            flex-direction: column;
+            padding: 1rem 0;
+            & button {
+                margin-top: 1rem;
+            }
+        }
+    }
+    .price {
+        & .priceList {
+            flex-direction: column;
+            align-items: center;
+            & .vLine {
+                height: 1px;
+                width: 100%;
+                background-color: #333;
+                margin: 1rem 0;
+            }
+            & .priceItem {
+                width: 100%;
+                &:last-child {
+                    text-align: center;
+                }
+                &:first-child {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .me {
+        & span {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .me {
+        & button {
+            width: 75%;
+        }
+    }
+    .whyMe {
+        & .advantages {
+            & .advantagesList {
+                flex-direction: column;
+                align-items: center;
+                & .advantagesItem {
+                    width: 100%;
+                    & p {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .whyMe {
+        & .whyMem {
+            & .whyMeList {
+                flex-direction: column;
+                align-items: center;
+                & .whyMeItem {
+                    width: 100%;
+                    & p {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .info {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        & span {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            &:first-child {
+                margin-bottom: 2rem;
+            }
+            & span {
+                width: auto;
+            }
+        }
+    }
+    .popupForm {
+        & form {
+            & .ok {
+                height: 3rem;
+            }
+        }
+    }
+    .popupForm {
+        & form {
+            & button {
+                & svg {
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+        }
+    }
+    .popupPolit {
+        & .politica {
+            width: 80%;
+            height: 60%;
+            overflow-y: scroll;
+        }
+    }
+    #main3 {
+        & .list2 {
+            & .item2 {
+                width: 100%;
+                height: 17rem;
+            }
+        }
+    }
+
+}
+@media (max-width:375px) {
+    header .top, header .bottom, .heroSection, .price, .me, .whyMe, footer, nav, #main3, #main2 , #main4, .info {
+        padding: 0 2rem;
+    }
+    header .top, header .bottom, footer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+}
+@media (max-width:360px) {
+    nav {
+        & a {
+            font-size: 1rem;
+        }
+    }
+    
+}
+@media (max-width:320px) {
+    html {
+        font-size: 10px;
+    }
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}
+@media (max-width:1920px) {
+    
+}

@@ -1,0 +1,560 @@
+/* main Страница */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Marmelad";
+    font-weight: 400;
+    color: #333;
+}
+button, .ok {
+    cursor: pointer;
+}
+body {
+    background-color: #eee
+}
+header .top,header .bottom,.heroSection,.price,.me,.whyMe,footer,nav {
+    padding: 0 20rem;
+}
+nav {
+    background-color: #9FDB13;
+    display: flex;
+    justify-content: space-between;
+    & a {
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        &:hover {
+            background-color: #9ad11a;
+        }
+    }
+    & .vLine {
+        height: auto;
+        width: 1px;
+        background-color: #fff;
+    }
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+}
+/* header */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    & .top, & .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .top {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        & span {
+            display: flex;
+            align-items: center;
+            & h1 {
+                padding-left: 0.5rem;
+            }
+        }
+        & a {
+            font-size: 2rem;
+            text-decoration: none;
+            &:hover {
+                color: #9ad11a;
+            }
+    
+        }
+    }
+    & .bottom {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #fff;
+        & span {
+            display: flex;
+            align-items: center;
+            & p {
+                padding-left: 0.5rem;
+            }
+
+        }
+    }
+}
+/* heroSection */
+.heroSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & span:first-child {
+        background-image: url(img/back.jpg);
+        background-size: cover;
+        height: 40rem;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        & h1 {
+            font-size: 2rem;
+            background-color: #9FDB13;
+            padding: 0.5rem;
+        }
+    }
+    & span:nth-child(2) {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 0;
+        & button {
+            width: 20rem;
+            background-color: #9FDB13;
+            border: 1px solid #333;
+            font-size: 1.25rem;
+            &:hover {
+                background-color: #9ad11a;
+            }
+    
+        }
+    }
+}
+/* price */
+.price {
+    padding-top: 1rem;
+    & h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    & .priceList {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        & .vLine {
+            height: auto;
+            width: 1px;
+            background-color: #333;
+        }    
+        & .priceItem {
+            width: 30%;
+            & h2 {
+                margin-bottom: 1rem;
+                color: #9FDB13;
+            }
+            &:first-child {
+                text-align: left;
+            }
+            &:nth-child(3) {
+                text-align: center;
+            }
+            &:last-child {
+                text-align: right;
+            }
+            & p {
+                padding-bottom: 0.5rem;
+                &:last-child {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+/* me */
+.me {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    & span {
+        display: flex;
+        margin-top: 1rem;
+        & img {
+            width: 20rem;
+            margin: 0 1rem 1rem 0;
+        }
+        & p {
+            font-size: 1.25rem;
+            text-align: justify;
+        }
+    }
+    & button {
+        width: 50%;
+        height: 3rem;
+        background-color: #9ad11a;
+        margin: 2rem 0;
+        border: 1px solid #333;
+        font-size: 1.25rem;
+        &:hover {
+            background-color: #9FDB13;
+        }
+    }
+}
+/* whyMe */
+.whyMe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    & .advantages {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        & h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        & .advantagesList {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            & .advantagesItem {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                & p {
+                    text-align: justify;
+                }
+                & h2 {
+                    color: #9FDB13;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+    & .whyMem {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        & h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        & .whyMeList {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            & .whyMeItem {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                & p {
+                    text-align: justify;
+                    & b {
+                        color: #9FDB13;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+    }
+}
+/* footer */
+footer {
+    background-color: #9FDB13;
+    border-top: 1px solid #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    & span {
+        display: flex;
+        & svg {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 1rem;
+        }
+        & span {
+            display: block;
+            & h2 {
+                margin-bottom: 1rem;
+            }
+            & p {
+                width: 100%;
+                margin-bottom: 1rem;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            & a {
+                &:hover {
+                    color: #33ff;
+                }
+    
+            }
+        }
+    }
+}
+
+/* price Страница */
+#main2 {
+    padding: 0 20rem;
+    margin-bottom: 4rem;
+    & h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    & .list1 {
+        & h2 {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        & .item1 {
+            & span {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+                & p {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+/* pk mono laptop Страница */
+#main3 {
+    padding: 0 20rem;
+    margin-bottom: 4rem;
+    & h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    & .list2 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+        & h2 {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        & .item2 {
+            background-image: url(img/backPK.jpg);
+            background-size: cover;
+            width: 45%;
+            height: 15rem;
+            background-color: #ddd;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #333;
+            &:hover {
+                button {
+                    visibility: visible;
+                }
+            }
+            &:last-child {
+                margin: 0;
+            }
+            & h1 {
+                margin: 0;
+                color: #fff;
+            }
+            & p {
+                color: #fff;
+            }
+            & span {
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                & button {
+                    background-color: #9ad11a;
+                    padding: 0.5rem 0;
+                    border: 1px solid #333;
+                    visibility: hidden;
+                    &:hover {
+                        background-color: #9FDB13;
+                    }
+            
+                }
+            }
+        }
+    }
+}
+/* review Страница */
+#main4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20rem;
+    margin-bottom: 4rem;
+    & h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    & .reviewList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+        & h2 {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        & .reviewItem {
+            width: 100%;
+            height: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            &.show {
+                height: auto;
+                visibility: visible;
+                opacity: 1;
+            }
+            & img {
+                width: 10rem;
+                margin-top: 2rem;
+            }
+            & span {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                & span {
+                    width: auto;
+                }
+            }
+            & h2 {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+    & button {
+        width: 50%;
+        height: 4rem;
+        background-color: #9ad11a;
+        border: 1px solid #333;
+        font-size: 1.25rem;
+        &:hover {
+            background-color: #9FDB13;
+        }
+    }
+}
+/* info */
+.info {
+    padding: 0 20rem;
+    display: flex;
+    justify-content: space-between;
+    & button {
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+        &:hover {
+            color: #33ff;
+        }
+    }
+}
+/* popupForm */
+.popupForm {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+    position: fixed;
+    display: grid;
+    justify-items: center;
+    z-index: 99;
+    align-items: end;
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+    & form {
+        width: 80%;
+        height: 15rem;
+        background-color: #fff;
+        border: 1px solid #333;
+        border-bottom: none;
+        position: relative;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: transparent;
+            border: none;
+            height: 3rem;
+            width: 3rem;
+            &:hover path {
+                stroke: #9ad11a;
+            }
+        }
+        & span {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            & input {
+                width: 45%;
+                height: 3rem;
+                padding-left: 1rem;
+            }
+        }
+        & .ok {
+            height: 5rem;
+            background-color: #9ad11a;
+            border: 1px solid #333;
+            font-size: 1.25rem;
+            &:hover {
+                background-color: #9FDB13;
+            }
+        }
+    }
+}
+.popupPolit {
+    width: 100%;
+    height: 100%;
+    background-color: #333333b6;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+    position: fixed;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    z-index: 999;
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+    & button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: transparent;
+        border: none;
+        height: 3rem;
+        width: 3rem;
+        &:hover path {
+            stroke: #9ad11a;
+        }
+    }
+    & .politica {
+        width: 60%;
+        height: 80%;
+        padding: 2rem;
+        background-color: #fff;
+        & h1 {
+            font-size: 2rem;
+        }
+    }
+}
